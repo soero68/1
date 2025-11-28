@@ -36,6 +36,8 @@
                 background-size: cover;
                 background-attachment: fixed;
             }
+            .quote-card { transition: all 0.3s ease; }
+            .quote-card:hover { background-color: rgba(230, 57, 70, 0.2); transform: scale(1.02); }
         }
     </style>
 </head>
@@ -51,6 +53,8 @@
                 <a href="#tab1" class="tab-link tab-active py-2 px-1 hover:text-kingGold transition-colors">牢九门</a>
                 <a href="#tab2" class="tab-link py-2 px-1 hover:text-kingGold transition-colors">想赢无笑</a>
                 <a href="#tab3" class="tab-link py-2 px-1 hover:text-kingGold transition-colors">轮椅英雄</a>
+                <a href="#tab4" class="tab-link py-2 px-1 hover:text-kingGold transition-colors">王者台词</a>
+                <a href="#tab5" class="tab-link py-2 px-1 hover:text-kingGold transition-colors">我的王者</a>
             </nav>
             <button class="md:hidden text-xl" id="menuBtn">
                 <i class="fa fa-bars"></i>
@@ -62,6 +66,8 @@
                 <a href="#tab1" class="tab-link tab-active py-2 hover:text-kingGold transition-colors">牢九门</a>
                 <a href="#tab2" class="tab-link py-2 hover:text-kingGold transition-colors">想赢无笑</a>
                 <a href="#tab3" class="tab-link py-2 hover:text-kingGold transition-colors">轮椅英雄</a>
+                <a href="#tab4" class="tab-link py-2 hover:text-kingGold transition-colors">王者台词</a>
+                <a href="#tab5" class="tab-link py-2 hover:text-kingGold transition-colors">我的王者</a>
             </div>
         </div>
     </header>
@@ -274,6 +280,203 @@
                     </div>
                 </div>
             </section>
+
+            <!-- 王者台词分页 -->
+            <section id="tab4" class="tab-content hidden">
+                <div class="bg-kingBlue/20 rounded-xl p-6 md:p-8 border border-kingPurple/30 mb-10">
+                    <h2 class="text-3xl font-bold mb-8 text-kingGold flex items-center gap-2">
+                        <i class="fa fa-commenting text-kingRed"></i>王者台词 - 峡谷经典语录
+                    </h2>
+                    <p class="text-lg mb-8 text-center text-kingGold/90">那些刻在DNA里的台词，你还记得多少？</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- 李白 -->
+                        <div class="quote-card bg-kingBlack/40 rounded-lg p-6 border border-kingGold/20">
+                            <div class="flex items-start gap-4">
+                                <i class="fa fa-quote-left text-kingGold text-3xl mt-1"></i>
+                                <div>
+                                    <h3 class="text-xl font-bold text-kingGold mb-2">李白</h3>
+                                    <p class="text-gray-200 italic mb-3">"十步杀一人，千里不留行。"</p>
+                                    <p class="text-gray-300">"今朝有酒今朝醉。"</p>
+                                    <p class="text-gray-300">"但愿长醉不复醒。"</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 韩信 -->
+                        <div class="quote-card bg-kingBlack/40 rounded-lg p-6 border border-kingGold/20">
+                            <div class="flex items-start gap-4">
+                                <i class="fa fa-quote-left text-kingGold text-3xl mt-1"></i>
+                                <div>
+                                    <h3 class="text-xl font-bold text-kingGold mb-2">韩信</h3>
+                                    <p class="text-gray-200 italic mb-3">"到达胜利之前，无法回头。"</p>
+                                    <p class="text-gray-300">"必将百倍奉还！"</p>
+                                    <p class="text-gray-300">"我的就是我的，你的也是我的。"</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 孙悟空 -->
+                        <div class="quote-card bg-kingBlack/40 rounded-lg p-6 border border-kingGold/20">
+                            <div class="flex items-start gap-4">
+                                <i class="fa fa-quote-left text-kingGold text-3xl mt-1"></i>
+                                <div>
+                                    <h3 class="text-xl font-bold text-kingGold mb-2">孙悟空</h3>
+                                    <p class="text-gray-200 italic mb-3">"俺老孙来也！"</p>
+                                    <p class="text-gray-300">"吃俺老孙一棒！"</p>
+                                    <p class="text-gray-300">"有妖气！"</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 貂蝉 -->
+                        <div class="quote-card bg-kingBlack/40 rounded-lg p-6 border border-kingGold/20">
+                            <div class="flex items-start gap-4">
+                                <i class="fa fa-quote-left text-kingGold text-3xl mt-1"></i>
+                                <div>
+                                    <h3 class="text-xl font-bold text-kingGold mb-2">貂蝉</h3>
+                                    <p class="text-gray-200 italic mb-3">"花开有时，梦醒有时。"</p>
+                                    <p class="text-gray-300">"美貌也是武器。"</p>
+                                    <p class="text-gray-300">"爱情，不是想要就能有。"</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 诸葛亮 -->
+                        <div class="quote-card bg-kingBlack/40 rounded-lg p-6 border border-kingGold/20">
+                            <div class="flex items-start gap-4">
+                                <i class="fa fa-quote-left text-kingGold text-3xl mt-1"></i>
+                                <div>
+                                    <h3 class="text-xl font-bold text-kingGold mb-2">诸葛亮</h3>
+                                    <p class="text-gray-200 italic mb-3">"运筹帷幄之中，决胜千里之外。"</p>
+                                    <p class="text-gray-300">"智商太低会传染，离我远点。"</p>
+                                    <p class="text-gray-300">"天下如棋，一步三算。"</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 露娜 -->
+                        <div class="quote-card bg-kingBlack/40 rounded-lg p-6 border border-kingGold/20">
+                            <div class="flex items-start gap-4">
+                                <i class="fa fa-quote-left text-kingGold text-3xl mt-1"></i>
+                                <div>
+                                    <h3 class="text-xl font-bold text-kingGold mb-2">露娜</h3>
+                                    <p class="text-gray-200 italic mb-3">"月光，映照着我的生命，以及你的死期。"</p>
+                                    <p class="text-gray-300">"燃烧的剑，燃烧的心！"</p>
+                                    <p class="text-gray-300">"别追我！"</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 亚瑟 -->
+                        <div class="quote-card bg-kingBlack/40 rounded-lg p-6 border border-kingGold/20">
+                            <div class="flex items-start gap-4">
+                                <i class="fa fa-quote-left text-kingGold text-3xl mt-1"></i>
+                                <div>
+                                    <h3 class="text-xl font-bold text-kingGold mb-2">亚瑟</h3>
+                                    <p class="text-gray-200 italic mb-3">"永不背叛！"</p>
+                                    <p class="text-gray-300">"为了王者的形象，连睡觉也穿着铠甲。"</p>
+                                    <p class="text-gray-300">"圣剑选择我，因为它也爱好和平。"</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 妲己 -->
+                        <div class="quote-card bg-kingBlack/40 rounded-lg p-6 border border-kingGold/20">
+                            <div class="flex items-start gap-4">
+                                <i class="fa fa-quote-left text-kingGold text-3xl mt-1"></i>
+                                <div>
+                                    <h3 class="text-xl font-bold text-kingGold mb-2">妲己</h3>
+                                    <p class="text-gray-200 italic mb-3">"请尽情吩咐妲己，主人。"</p>
+                                    <p class="text-gray-300">"为什么会痛苦？一直微笑就好了。"</p>
+                                    <p class="text-gray-300">"羁绊，是什么意思？"</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 后羿 -->
+                        <div class="quote-card bg-kingBlack/40 rounded-lg p-6 border border-kingGold/20">
+                            <div class="flex items-start gap-4">
+                                <i class="fa fa-quote-left text-kingGold text-3xl mt-1"></i>
+                                <div>
+                                    <h3 class="text-xl font-bold text-kingGold mb-2">后羿</h3>
+                                    <p class="text-gray-200 italic mb-3">"周日被我射熄火了，所以今天是周一。"</p>
+                                    <p class="text-gray-300">"光明，制造瞎子。"</p>
+                                    <p class="text-gray-300">"最光明，最黑暗。"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10 bg-kingBlack/40 rounded-lg p-6 border-l-4 border-kingPurple">
+                        <h4 class="text-xl font-bold mb-3 text-kingGold">台词背后的故事</h4>
+                        <p class="text-gray-300">王者荣耀的英雄台词不仅富有诗意，还蕴含着英雄的背景故事和性格特点。李白的诗句充满侠客气息，诸葛亮的台词彰显智慧，而妲己的话语则透露出天真与懵懂。这些经典台词已经成为游戏文化的重要组成部分，深深印在玩家的记忆中。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 我的王者分页 -->
+            <section id="tab5" class="tab-content hidden">
+                <div class="bg-kingRed/20 rounded-xl p-6 md:p-8 border border-kingGold/30 mb-10">
+                    <h2 class="text-3xl font-bold mb-8 text-kingGold flex items-center gap-2">
+                        <i class="fa fa-user-circle text-kingRed"></i>我的王者 - 个人战绩展示
+                    </h2>
+                    <p class="text-lg mb-8 text-center text-kingGold/90">记录我的王者之路，每一步都是成长</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- 战绩截图1 -->
+                        <div class="hero-card bg-kingBlack/50 rounded-lg overflow-hidden border border-kingGold/30">
+                            <img src="./images/我的战绩1.jpg" alt="我的王者战绩1" class="w-full h-64 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-kingGold mb-3">赛季荣耀</h3>
+                                <p class="text-gray-300 mb-4">本赛季达到最强王者段位，单排上分之路的见证</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-kingRed/30 px-3 py-1 rounded-full text-sm">最强王者</span>
+                                    <span class="bg-kingBlue/30 px-3 py-1 rounded-full text-sm">单排上分</span>
+                                    <span class="bg-kingGold/30 px-3 py-1 rounded-full text-sm">50星</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 战绩截图2 -->
+                        <div class="hero-card bg-kingBlack/50 rounded-lg overflow-hidden border border-kingGold/30">
+                            <img src="./images/我的战绩2.jpg" alt="我的王者战绩2" class="w-full h-64 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-kingGold mb-3">本命英雄</h3>
+                                <p class="text-gray-300 mb-4">李白万战成就达成，我的信仰英雄</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-kingRed/30 px-3 py-1 rounded-full text-sm">李白</span>
+                                    <span class="bg-kingBlue/30 px-3 py-1 rounded-full text-sm">10000战力</span>
+                                    <span class="bg-kingGold/30 px-3 py-1 rounded-full text-sm">省级排名</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10 bg-kingBlack/40 rounded-lg p-6 border border-kingGold/30">
+                        <h3 class="text-2xl font-bold mb-4 text-kingGold text-center">我的王者历程</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="bg-kingBlack/50 p-4 rounded-lg text-center">
+                                <div class="text-4xl font-bold text-kingGold mb-2">3年</div>
+                                <p class="text-gray-300">游戏时长</p>
+                            </div>
+                            <div class="bg-kingBlack/50 p-4 rounded-lg text-center">
+                                <div class="text-4xl font-bold text-kingGold mb-2">5000+</div>
+                                <p class="text-gray-300">对战场次</p>
+                            </div>
+                            <div class="bg-kingBlack/50 p-4 rounded-lg text-center">
+                                <div class="text-4xl font-bold text-kingGold mb-2">15</div>
+                                <p class="text-gray-300">本命英雄</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <h4 class="text-xl font-bold mb-3 text-kingGold">个人心得</h4>
+                            <p class="text-gray-300">从青铜到王者，一路走来收获的不仅是段位，更是团队合作的重要性和永不放弃的精神。每一场比赛都是新的挑战，每一次失败都是成长的机会。王者荣耀不仅是一款游戏，更是一种生活态度的体现。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 
@@ -314,7 +517,7 @@
 
         // 页面加载动画
         window.addEventListener('load', function() {
-            document.querySelectorAll('.hero-card').forEach((card, index) => {
+            document.querySelectorAll('.hero-card, .quote-card').forEach((card, index) => {
                 card.style.opacity = '0';
                 card.style.transform = 'translateY(20px)';
                 
