@@ -28,11 +28,11 @@
         @layer utilities {
             .text-shadow { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); }
             .hero-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-            .hero-<|card|>:hover { transform: translateY(-8px); box-shadow: 0 10px 25px -5px rgba(230, 57, 70, 0.5); }
+            .hero-card:hover { transform: translateY(-8px); box-shadow: 0 10px 25px -5px rgba(230, 57, 70, 0.5); }
             .tab-active { border-bottom: 3px solid #FFD700; color: #FFD700; }
             .page-bg { 
                 background-image: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.95)), 
-                                url('https://www.bizhi99.com/uploads/allimg/202503/341454-162ZQ12412.jpg'); /* 网上找的横幅图 */
+                                url('./images/横幅.jpg'); /* 本地横幅图 */
                 background-size: cover;
                 background-attachment: fixed;
             }
@@ -69,7 +69,7 @@
     <main class="container mx-auto px-4 py-8">
         <!-- 首页横幅 -->
         <section class="mb-12 rounded-xl overflow-hidden relative h-64 md:h-96">
-            <img src="https://www.bizhi99.com/uploads/allimg/202503/341454-162ZQ12412.jpg" alt="王者荣耀战场" class="w-full h-full object-cover"> <!-- 网上找的横幅图 -->
+            <img src="./images/横幅.jpg" alt="王者荣耀战场" class="w-full h-full object-cover"> <!-- 本地横幅图 -->
             <div class="absolute inset-0 bg-gradient-to-t from-kingBlack to-transparent flex flex-col justify-end p-6 md:p-10">
                 <h2 class="text-3xl md:text-4xl font-bold text-shadow mb-2">峡谷争锋 巅峰对决</h2>
                 <p class="text-lg md:text-xl text-kingGold/90">每一次出手，都是向胜利的冲锋</p>
@@ -172,7 +172,7 @@
                     
                     <div class="flex flex-col md:flex-row gap-8 items-center justify-center">
                         <div class="w-full md:w-1/2 hero-card bg-kingBlack/50 rounded-lg overflow-hidden border border-kingGold/30">
-                            <img src="https://www.bizhi99.com/uploads/allimg/202503/341454-162ZQ12412.jpg" alt="梦泪偷水晶" class="w-full h-64 object-cover"> <!-- 网上找的横幅图 -->
+                            <img src="./images/梦泪偷水晶.jpg" alt="梦泪偷水晶" class="w-full h-64 object-cover"> <!-- 本地梦泪图片 -->
                             <div class="p-6">
                                 <h3 class="text-2xl font-bold text-kingGold mb-3">梦泪偷水晶名场面</h3>
                                 <p class="text-lg mb-2">偷一次水晶，被惦记了10年</p>
@@ -186,7 +186,7 @@
                         </div>
                         
                         <div class="w-full md:w-1/2 hero-card bg-kingBlack/50 rounded-lg overflow-hidden border border-kingGold/30">
-                            <img src="https://www.bizhi99.com/uploads/allimg/202503/341454-162ZQ12412.jpg" alt="梦泪偷水晶表情" class="w-full h-64 object-cover"> <!-- 网上找的横幅图 -->
+                            <img src="./images/梦泪表情.jpg" alt="梦泪偷水晶表情" class="w-full h-64 object-cover"> <!-- 本地梦泪表情图片 -->
                             <div class="p-6">
                                 <h3 class="text-2xl font-bold text-kingGold mb-3">专注的表情，必胜的信念</h3>
                                 <p class="text-gray-300 mb-4">2016年KPL赛场，梦泪使用韩信在无兵线情况下强行拆掉敌方水晶，创造了王者荣耀职业联赛的传奇时刻。这一刻不仅改变了比赛结果，更推动了游戏机制的调整。</p>
